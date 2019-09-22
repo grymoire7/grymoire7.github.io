@@ -27,6 +27,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tatteberry
 github_username:  grymoire7
 
+show_downloads: false
+
 # Build settings
 theme: jekyll-theme-slate
 plugins:
