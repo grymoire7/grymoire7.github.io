@@ -36,11 +36,11 @@
             </section>
           {% endif %}
 
-          <a href="{{ site.github.owner_url }}" class="fab fa-github-square fa-2x fa-white tooltip"><span class="tooltiptext">Github repo</span></a>
-          <a href="https://twitter.com/{{ site.twitter_username }}" class="fab fa-twitter-square fa-2x fa-white tooltip"><span class="tooltiptext">Twitter</span></a>
-          <a href="mailto:{{ site.email }}" class="fas fa-envelope-square fa-2x fa-white tooltip"><span class="tooltiptext">Email</span></a>
-          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="fab fa-linkedin fa-2x fa-white tooltip"><span class="tooltiptext">LinkedIn</span></a>
-          <a href="#" class="fas fa-file-pdf fa-2x fa-white tooltip"><span class="tooltiptext">Résumé</span></a>
+          <a href="{{ site.github.owner_url }}" target="_blank" class="fab fa-github-square fa-2x fa-white tooltip"><span class="tooltiptext">Github repo</span></a>
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="fab fa-twitter-square fa-2x fa-white tooltip"><span class="tooltiptext">Twitter</span></a>
+          <a href="mailto:{{ site.email }}" target="_blank" class="fas fa-envelope-square fa-2x fa-white tooltip"><span class="tooltiptext">Email</span></a>
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="fab fa-linkedin fa-2x fa-white tooltip"><span class="tooltiptext">LinkedIn</span></a>
+          <a href="#" target="_blank" class="fas fa-file-pdf fa-2x fa-white tooltip"><span class="tooltiptext">Résumé</span></a>
         </header>
     </div>
 
@@ -54,9 +54,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+        <p class="copyright">This site maintained by {{ site.owner }}</p>
         <p>Powered by Jekyll and AWS</p>
       </footer>
     </div>
